@@ -1,13 +1,12 @@
-import {Cliente} from "./byteBank_Clientes.js";
+import {Cliente} from "./byteBank_clientes.js";
 export class ContaCorrente{
-    //dados pulicos
+    //dados púlicos
     agencia;
     tipoDeConta;
     _cliente;
     //dados privado
     saldo = 0;
- 
-    
+     
     set cliente(newValue){
         if(newValue instanceof Cliente){
             this._cliente = newValue;
@@ -36,9 +35,8 @@ export class ContaCorrente{
     }     
 
     depositar(valor){
-        if(valor > 0)
-        {
-        
+        if(valor <= 100){
+        return;
         }
         this._saldo += valor;
     }
