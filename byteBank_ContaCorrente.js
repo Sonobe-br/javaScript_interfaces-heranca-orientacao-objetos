@@ -6,20 +6,6 @@ export class ContaCorrente{
     _cliente;
     //dados privado
     saldo = 0;
-     
-    set cliente(newValue){
-        if(newValue instanceof Cliente){
-            this._cliente = newValue;
-        }
-    }
-
-    get cliente(){
-        return this._cliente;
-    }
-
-    get saldo(){
-        return this._saldo;
-    }
 
     constructor(agencia, cliente){
         this.agencia = agencia;
