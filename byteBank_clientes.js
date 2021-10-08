@@ -11,12 +11,17 @@ export class Cliente {
         this.endereçoResidencial;
     }
     
-    constructor(primeiroNome, cpf, endereçoResidencial){
+    constructor(primeiroNome, cpf, endereçoResidencial, senha){
         this.primeiroNome = primeiroNome;
         this._cpf = cpf;
         this.endereçoResidencial = endereçoResidencial;
-
+        this._senha = senha;
     } 
+
+    autenticar(){
+        return false; 
+    }
+
 }
 
 

@@ -1,19 +1,20 @@
-import{ Cliente } from './Contas/byteBank_clientes.js';
-import{ ContaCorrente } from './Contas/byteBank_contaCorrente-heranca.js'
-import{ ContaPoupanca } from './Contas/byteBank_Poupanca-Heranca.js'
-import{ ContaSalario } from './Contas/byteBank_Salario-Heranca.js';
+import{Cliente} from "./byteBank_clientes.js";
+import{Gerente} from "./Funcionarios/byteBank-gerente.js";
+import{Diretor} from "./Funcionarios/byteBank-diretor.js";
+import{SistemaAutenticacao} from "./byteBank-SistemaAutenticacao.js";
 
-//let numeroDeContas = 0;
+const diretor = new Diretor ("Daniel", 10000, 12345678900);
+diretor.cadastrarSenha("123456");
 
-const cliente1 = new Cliente('Daniel', 276869748-63, 'Rua das Ostras, 27');
+const gerente = new Gerente ("Pedro", 5000, 23456476964);
+gerente.cadastrarSenha("654321");
+const cliente = new Cliente ("Anita", 27696875643, "080508"); 
 
-const contaCorrenteDaniel = new ContaCorrente(cliente1, 1001);
-const contaPoupanca = new ContaPoupanca(500, cliente1, 1001);
-const contaSalario = new ContaSalario(cliente1);
-contaSalario.depositar(100);
-contaSalario.sacar(10); 
+const diretorLogado = SistemaAutenticacao.login(diretor, "123456");
+const gerenteLogado = SistemaAutenticacao.login(gerente, "654321");
 
-console.log(contaSalario);
+const clienteLogado = SistemaAutenticacao.login(cliente, "080508");
 
+console.log(diretorLogado,gerenteLogado, clienteLogado); 
 
 
