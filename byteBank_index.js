@@ -1,8 +1,7 @@
-import{ Cliente } from './byteBank_clientes.js';
-import{ ContaCorrente } from './byteBank_contaCorrente-heranca.js'
-import{ ContaPoupanca } from './byteBank_Poupanca-Heranca.js'
-import { Conta } from './byteBank_conta-heranca.js';
-import { ContaSalario } from './byteBank_Salario-Heranca.js';
+import{ Cliente } from './Contas/byteBank_clientes.js';
+import{ ContaCorrente } from './Contas/byteBank_contaCorrente-heranca.js'
+import{ ContaPoupanca } from './Contas/byteBank_Poupanca-Heranca.js'
+import{ ContaSalario } from './Contas/byteBank_Salario-Heranca.js';
 
 //let numeroDeContas = 0;
 
