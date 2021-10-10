@@ -18,3 +18,7 @@ const clienteLogado = SistemaAutenticacao.login(cliente, "080508");
 console.log(diretorLogado,gerenteLogado, clienteLogado); 
 
 
+/*Orientação a objeto tem dois pilares muito importates, o Polimorfismo que é tratar vários objetos diferentes  
+de maneira semelhante isso ajuda a economizar códigos (ducky type) e o encapsulamento para proteger o máximo possivel
+as propriedades e os atributos que são sensiveis as nossas classes.
+*/    
