@@ -3,7 +3,7 @@
 Explorei muito mais esse mundo da orientação a objetos e de como trabalhar de maneira segura, de maneira confiável, reutilizando código e compartilhando comportamentos dentro dos objetos.
 Trabalhei o nosso sistema de tratamento de contas para o ByteBank, então tenho uma classe mãe Conta, onde consego ter todo o comportamento que é compartilhado entre todas as contas. Fez todo sentido essa classe ser abstrata, porque eu não quero que ninguém a instancie diretamente, então trabalhei classes abstratas.
 
-=============================================================================================================
+====================================================
 
 Métodos abstratos porque cada tipo de conta vai ter uma ligeira diferença no método sacar, então eu quero garantir que todo mundo implemente, pergunte se não souber, como isso tem que ser implementado para o nosso cliente, para o ByteBank ter que especificar isso para nós.
 O método abstrato serve para definirmos uma interface padrão, que todo mundo vai ter esse método, mas temos que definir como cada um vai realmente executá-lo.
@@ -18,8 +18,8 @@ Trabalhamos agora no final polimorfismo, que é a propriedade superimportante de
 
 Lógico que sempre pensando nas boas práticas de programação e mantendo a legibilidade e a comunicação no nosso código de uma maneira eficiente.
 
-=============================================================================================================
+====================================================
 
 Foi um curso de orientação a objetos, vimos vários conceitos, mas tem muitas outras coisas de boas práticas que vimos também aqui no meio. E acabamos fazendo um sistema bem interessante, então terminamos nosso sistema de contas, construimos o sistema básico de funcionários e fizemos o sistema de autenticação. 🎆🎇
 
-=============================================================================================================
+====================================================
